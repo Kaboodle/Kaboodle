@@ -32,6 +32,8 @@
 		1F7D0F7718977DA0005F686E /* UIKPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKPickerView.m; sourceTree = "<group>"; };
 		1FF8C8A718978DC200F6F802 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FF8C8A91898131B00F6F802 /* UIKaboodle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKaboodle.h; sourceTree = "<group>"; };
+		1FF8C8B118982B8E00F6F802 /* UIKPickerViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKPickerViewDelegate.h; sourceTree = "<group>"; };
+		1FF8C8B418982BED00F6F802 /* UIKPickerViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKPickerViewDataSource.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,9 +87,11 @@
 		1F7D0F7018977B35005F686E /* UIKaboodle */ = {
 			isa = PBXGroup;
 			children = (
+				1FF8C8A91898131B00F6F802 /* UIKaboodle.h */,
 				1F7D0F7618977DA0005F686E /* UIKPickerView.h */,
 				1F7D0F7718977DA0005F686E /* UIKPickerView.m */,
-				1FF8C8A91898131B00F6F802 /* UIKaboodle.h */,
+				1FF8C8B418982BED00F6F802 /* UIKPickerViewDataSource.h */,
+				1FF8C8B118982B8E00F6F802 /* UIKPickerViewDelegate.h */,
 			);
 			path = UIKaboodle;
 			sourceTree = "<group>";
@@ -126,6 +130,7 @@
 		1F7D0F3C1897651D005F686E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = "";
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Kaboodle Framework";
 			};

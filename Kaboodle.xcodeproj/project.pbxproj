@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F7D0F481897651D005F686E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F7D0F471897651D005F686E /* Foundation.framework */; };
+		1F7D0F7818977DA0005F686E /* UIKPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F7D0F7718977DA0005F686E /* UIKPickerView.m */; };
+		1FF8C8A818978DC200F6F802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF8C8A718978DC200F6F802 /* UIKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F7D0F421897651D005F686E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1F7D0F441897651D005F686E /* libKaboodle.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libKaboodle.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7D0F471897651D005F686E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F7D0F7518977C77005F686E /* Kaboodle-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Kaboodle-Prefix.pch"; sourceTree = "<group>"; };
+		1F7D0F7618977DA0005F686E /* UIKPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKPickerView.h; sourceTree = "<group>"; };
+		1F7D0F7718977DA0005F686E /* UIKPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKPickerView.m; sourceTree = "<group>"; };
+		1FF8C8A718978DC200F6F802 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F7D0F411897651D005F686E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FF8C8A818978DC200F6F802 /* UIKit.framework in Frameworks */,
+				1F7D0F481897651D005F686E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F7D0F3B1897651D005F686E = {
+			isa = PBXGroup;
+			children = (
+				1F7D0F491897651D005F686E /* Classes */,
+				1F7D0F7418977C77005F686E /* SupportingFiles */,
+				1F7D0F461897651D005F686E /* Frameworks */,
+				1F7D0F451897651D005F686E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F7D0F451897651D005F686E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D0F441897651D005F686E /* libKaboodle.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F7D0F461897651D005F686E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FF8C8A718978DC200F6F802 /* UIKit.framework */,
+				1F7D0F471897651D005F686E /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F7D0F491897651D005F686E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D0F7018977B35005F686E /* UIKaboodle */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		1F7D0F7018977B35005F686E /* UIKaboodle */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D0F7618977DA0005F686E /* UIKPickerView.h */,
+				1F7D0F7718977DA0005F686E /* UIKPickerView.m */,
+			);
+			path = UIKaboodle;
+			sourceTree = "<group>";
+		};
+		1F7D0F7418977C77005F686E /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				1F7D0F7518977C77005F686E /* Kaboodle-Prefix.pch */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F7D0F431897651D005F686E /* Kaboodle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7D0F671897651D005F686E /* Build configuration list for PBXNativeTarget "Kaboodle" */;
+			buildPhases = (
+				1F7D0F401897651D005F686E /* Sources */,
+				1F7D0F411897651D005F686E /* Frameworks */,
+				1F7D0F421897651D005F686E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Kaboodle;
+			productName = Kaboodle;
+			productReference = 1F7D0F441897651D005F686E /* libKaboodle.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F7D0F3C1897651D005F686E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Kaboodle Framework";
+			};
+			buildConfigurationList = 1F7D0F3F1897651D005F686E /* Build configuration list for PBXProject "Kaboodle" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1F7D0F3B1897651D005F686E;
+			productRefGroup = 1F7D0F451897651D005F686E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F7D0F431897651D005F686E /* Kaboodle */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F7D0F401897651D005F686E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7D0F7818977DA0005F686E /* UIKPickerView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F7D0F651897651D005F686E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F7D0F661897651D005F686E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F7D0F681897651D005F686E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Kaboodle.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SupportingFiles/Kaboodle-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1F7D0F691897651D005F686E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/Kaboodle.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SupportingFiles/Kaboodle-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F7D0F3F1897651D005F686E /* Build configuration list for PBXProject "Kaboodle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7D0F651897651D005F686E /* Debug */,
+				1F7D0F661897651D005F686E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F7D0F671897651D005F686E /* Build configuration list for PBXNativeTarget "Kaboodle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7D0F681897651D005F686E /* Debug */,
+				1F7D0F691897651D005F686E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F7D0F3C1897651D005F686E /* Project object */;
+}

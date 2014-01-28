@@ -31,6 +31,7 @@
 		1F7D0F7618977DA0005F686E /* UIKPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKPickerView.h; sourceTree = "<group>"; };
 		1F7D0F7718977DA0005F686E /* UIKPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKPickerView.m; sourceTree = "<group>"; };
 		1FF8C8A718978DC200F6F802 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1FF8C8A91898131B00F6F802 /* UIKaboodle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKaboodle.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +87,7 @@
 			children = (
 				1F7D0F7618977DA0005F686E /* UIKPickerView.h */,
 				1F7D0F7718977DA0005F686E /* UIKPickerView.m */,
+				1FF8C8A91898131B00F6F802 /* UIKaboodle.h */,
 			);
 			path = UIKaboodle;
 			sourceTree = "<group>";

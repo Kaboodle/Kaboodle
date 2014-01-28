@@ -607,6 +607,7 @@
     }
     
     CGFloat offset = 0;
+    CGFloat widthOfComponents = offset; // for centering
     for (NSInteger i=0; i < self.numberOfComponents; i++) {
         // get component or create new one
         UIKComponent *component;
@@ -625,6 +626,21 @@
         
         // increase offset by width of component
         offset += frame.size.width;
+        
+        widthOfComponents = offset; // for centering
+        
+        offset += 2; // gutters
+    }
+    
+    // for centering
+    CGFloat minimumInset = 11.0; // 0.0 if no chrome
+    offset = MAX((self.bounds.size.width - widthOfComponents)/2.0, minimumInset);
+    for (NSInteger i=0; i < self.numberOfComponents; i++) {
+        UIKComponent *component = [self.components objectAtIndex:i];
+        
+        CGRect frame = component.frame;
+        frame.origin.x += offset;
+        component.frame = frame;
     }
 }
 

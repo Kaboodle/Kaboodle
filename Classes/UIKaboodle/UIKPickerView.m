@@ -1,7 +1,6 @@
 //
 //  UIKPickerView.m
-//  UIKPickerView
-//
+//  Kaboodle
 
 #import "UIKPickerView.h"
 

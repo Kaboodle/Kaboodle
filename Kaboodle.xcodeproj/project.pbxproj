@@ -114,6 +114,7 @@
 				1F7D0F401897651D005F686E /* Sources */,
 				1F7D0F411897651D005F686E /* Frameworks */,
 				1F7D0F421897651D005F686E /* CopyFiles */,
+				1FF8C8BE1898620B00F6F802 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -150,6 +151,22 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FF8C8BE1898620B00F6F802 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/appledoc \\\n--project-name \"Kaboodle\" \\\n--project-company \"Kaboodle Framework\" \\\n--company-id \"com.kaboodleframework\" \\\n--docset-atom-filename \"Kaboodle.atom\" \\\n--docset-feed-url \"http://kaboodle.github.io/Kaboodle/%DOCSETATOMFILENAME\" \\\n--docset-package-url \"http://kaboodle.github.io/Kaboodle/%DOCSETPACKAGEFILENAME\" \\\n--docset-fallback-url \"http://kaboodle.github.io/Kaboodle/\" \\\n--output \"~/iphone/Documentation/KaboodleDocset\" \\\n--publish-docset \\\n--logformat xcode \\\n--keep-undocumented-objects \\\n--keep-undocumented-members \\\n--keep-intermediate-files \\\n--no-repeat-first-par \\\n--no-warn-invalid-crossref \\\n--ignore \"*.m\" \\\n--index-desc \"${PROJECT_DIR}/README.md\" \\\n--exit-threshold 2 \\\n\"${PROJECT_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F7D0F401897651D005F686E /* Sources */ = {

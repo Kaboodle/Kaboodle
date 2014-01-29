@@ -7,10 +7,10 @@
 #import "UIKPickerViewDataSource.h"
 #import "UIKPickerViewDelegate.h"
 
-/** This is a reimplementation of UIKit's <a href="https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView_Class/Reference/UIPickerView.html">UIPickerView</a>. The UIKPickerView class implements objects,
- called picker views, that use a spinning-wheel or slot-machine metaphor to show one or more sets of
- values. Users select values by rotating the wheels so that the desired row of values aligns with a 
- selection indicator.
+/** This is a reimplementation of UIKit's <a href="https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView_Class/Reference/UIPickerView.html">UIPickerView</a>. 
+ The UIKPickerView class implements objects, called picker views, that use a spinning-wheel or slot
+ machine metaphor to show one or more sets of values. Users select values by rotating the wheels so 
+ that the desired row of values aligns with a selection indicator.
  
  There is currently no UIKDatePicker subclass.
  
@@ -19,7 +19,8 @@
  has an indexed location (left to right) in a picker view. Each row on a component has content, 
  which is either a string or a view object such as a label (UILabel) or an image (UIImageView).
  
- Since this is based on <a href="https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView_Class/Reference/UIPickerView.html">UIPickerView</a>, refer to its documentation for more information.
+ Since this is based on <a href="https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView_Class/Reference/UIPickerView.html">UIPickerView</a>, refer to its documentation 
+ for more information.
  
  TODO:
  

@@ -173,24 +173,33 @@
 					<div class="section section-overview">
 						<a title="Overview" name="overview"></a>
 						<h2 class="subtitle subtitle-overview">Overview</h2>
-						<p>This is a reimplementation of UIKit&rsquo;s UIPickerView.</p>
+						<p>This is a reimplementation of UIKit&rsquo;s <a href="[https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView](https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView)_Class/Reference/UIPickerView.html">UIPickerView</a>. The UIKPickerView class implements objects,
+called picker views, that use a spinning-wheel or slot-machine metaphor to show one or more sets of
+values. Users select values by rotating the wheels so that the desired row of values aligns with a
+selection indicator.</p>
 
-<p>The current version does not have any chrome. Also the picker is cyclic and scrolls infinitely.</p>
+<p>There is currently no UIKDatePicker subclass.</p>
+
+<p>The user interface provided by a picker view consists of components and rows. A component is a
+wheel, which has a series of items (rows) at indexed locations on the wheel. Each component also
+has an indexed location (left to right) in a picker view. Each row on a component has content,
+which is either a string or a view object such as a label (UILabel) or an image (UIImageView).</p>
+
+<p>Since this is based on <a href="[https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView](https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView)_Class/Reference/UIPickerView.html">UIPickerView</a>, refer to its documentation for more information.</p>
 
 <p>TODO:</p>
 
 <ul>
 <li>fix layout when autoresizing, e.g., orientation change</li>
 <li>add toggle for vertical and horizontal orientations</li>
-<li>add toggle for cyclic and non-cyclic modes.</li>
+<li>add toggle for cyclic and non-cyclic modes. Currently, the picker is cyclic and scrolls infinitely.</li>
 <li>draw the chrome from UIPickerView and add a switch to disable it</li>
+<li>add iOS6 and iOS7 chrome</li>
 <li>chrome should be tintable</li>
 <li>stop on selected row instead of snapping to it</li>
 <li>default to UIPickerView scrolling behavior and chrome</li>
 </ul>
 
-
-<p>Since this is based on <a href="https://developer.apple.com/library/IOs/documentation/UIKit/Reference/UIPickerView_Class/Reference/UIPickerView.html">UIPickerView</a>, refer to its documentation for more information:</p>
 					</div>
 					
 					
@@ -355,6 +364,12 @@
 	
 	
 	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The data source must adopt the <a href="../Protocols/UIKPickerViewDataSource.html">UIKPickerViewDataSource</a> protocol and implement the required methods
+to return the number of components and the number of rows in each component.</p>
+	</div>
+	
 	
 	
 	
@@ -390,6 +405,14 @@
 	
 	
 	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The delegate must adopt the <a href="../Protocols/UIKPickerViewDelegate.html">UIKPickerViewDelegate</a> protocol and implement the required methods to
+return the drawing rectangle for rows in each component. It also provides the content for each
+component’s row, either as a string or a view, and it typically responds to new selections or
+deselections.</p>
+	</div>
 	
 	
 	
@@ -515,7 +538,22 @@ The default value of this property is NO.</p>
 
     
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>component</em></dt>
+			<dd><p>A zero-indexed number identifying a component.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The number of rows in the given component.</p>
+	</div>
 	
 	
 	
@@ -598,6 +636,16 @@ value is zero.</p>
 
     
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>component</em></dt>
+			<dd><p>A zero-indexed number identifying a component.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -640,7 +688,23 @@ component.</p>
 
     
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>component</em></dt>
+			<dd><p>A zero-indexed number identifying a component.</p></dd>
+		</dl>
+		
+	</div>
 	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>The size of rows in the given component. This is generally the size required to display the
+largest string or view used as a row in the component.</p>
+	</div>
 	
 	
 	
@@ -682,6 +746,27 @@ pickerView:rowHeightForComponent: <a href="#//api/name/delegate">delegate</a> me
 
     
 	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>row</em></dt>
+			<dd><p>A zero-indexed number identifying a row of component.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>component</em></dt>
+			<dd><p>A zero-indexed number identifying a component.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animated</em></dt>
+			<dd><p>YES to animate the selection by spinning the wheel (component) to the new value;
+if you specify NO, the new selection is shown immediately.</p></dd>
+		</dl>
+		
+	</div>
+	
 	
 	
 	
@@ -718,17 +803,26 @@ pickerView:rowHeightForComponent: <a href="#//api/name/delegate">delegate</a> me
 
     
 	
-	
-	
-	
-	
-	
-	
-	<div class="method-subsection discussion-section">
-		<h4 class="method-subtitle">Discussion</h4>
-		<p>The return value is a zero-indexed number identifying the selected row, or -1 if no row is
-selected.</p>
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>component</em></dt>
+			<dd><p>A zero-indexed number identifying a component.</p></dd>
+		</dl>
+		
 	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A zero-indexed number identifying the selected row, or -1 if no row is selected.</p>
+	</div>
+	
+	
+	
+	
 	
 	
 	
@@ -759,6 +853,21 @@ selected.</p>
 	<div class="method-subsection method-declaration"><code>- (UIView *)viewForRow:(NSInteger)<em>row</em> forComponent:(NSInteger)<em>component</em></code></div>
 
     
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>row</em></dt>
+			<dd><p>A zero-indexed number identifying a row of component.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>component</em></dt>
+			<dd><p>A zero-indexed number identifying a component.</p></dd>
+		</dl>
+		
+	</div>
 	
 	
 	

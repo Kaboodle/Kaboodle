@@ -174,7 +174,7 @@
     
     // Pick the smallest offset 
     NSInteger indexOffset;
-    if (abs(indexOffsetPositive) > abs(indexOffsetNegative))    {
+    if (ABS(indexOffsetPositive) > ABS(indexOffsetNegative))    {
         indexOffset = indexOffsetNegative;
     } else {
         indexOffset = indexOffsetPositive;
